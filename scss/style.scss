@@ -1,0 +1,55 @@
+@import'grid';
+@import'variables';
+@import'mixin';
+
+body{
+  font-family: $font-principal;
+}
+.menu{
+  text-align: right;
+  li{
+    @include li;
+    @include texto (20px);
+    color: $color-gray2;
+    display: inline-flex;
+    font-weight: lighter;
+    &:hover{
+      @include texto (20px);
+      color: $color-orange;
+    }
+    a{
+      color: $color-gray2;
+    }
+  }
+}
+.align-center{
+  text-align: center;
+}
+.active{
+  background: $color-orange;
+  padding: .7em 1.5em;
+  border-radius: 20px;
+  vertical-align: middle;
+  color: $color-white;
+}
+
+.fondo{
+  background-image: url(../assets/img/fondo.jpg);
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  .text-portada{
+    margin-top: 10%;
+      h1, h4{
+        letter-spacing: -0.3px;
+        color: $color-white;
+        font-size: 3em;
+        font-weight: normal;
+      }
+      h4{
+        font-size: 2em;
+        font-weight: 300;
+      }
+  }
+}

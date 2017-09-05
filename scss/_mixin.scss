@@ -1,0 +1,13 @@
+@mixin texto ($padd){
+  font-family: $font-principal;
+  line-height: 1.5em;
+  padding: ($padd);
+}
+
+@mixin li  {
+  list-style: none;
+  font-size:1em;
+  a{
+    text-decoration: none;
+  }
+}
