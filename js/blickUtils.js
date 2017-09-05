@@ -8,11 +8,12 @@ function info() {
 	var info = new XMLHttpRequest();
 	info.open('GET', url);
 	info.onload = function () {
-		var data = JSON.parse(info.responseText);
-		var nombre = data.name;
-		console.log(nombre);
+		var data = JSON.parse(info.response);
+		var name = data.name;
+    var email = data.email;
+		console.log(name);
 
-		alert(nombre)
+		alert(name + email)
 
 	}
 	info.send();
