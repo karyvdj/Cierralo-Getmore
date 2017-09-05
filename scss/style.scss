@@ -5,32 +5,32 @@
 body{
   font-family: $font-principal;
 }
+.align-center{
+  text-align: center;
+}
+
+.margin-10{
+  margin: 10% 0;
+}
 .menu{
   text-align: right;
   li{
     @include li;
     @include texto (20px);
-    color: $color-gray2;
-    display: inline-flex;
     font-weight: lighter;
     &:hover{
       @include texto (20px);
       color: $color-orange;
     }
-    a{
-      color: $color-gray2;
-    }
   }
 }
-.align-center{
-  text-align: center;
-}
+
 .active{
   background: $color-orange;
   padding: .7em 1.5em;
   border-radius: 20px;
   vertical-align: middle;
-  color: $color-white;
+  color: $color-white !important;
 }
 
 .fondo{
@@ -53,3 +53,7 @@ body{
       }
   }
 }
+
+.size-img-s{
+    width: 30%;
+  }

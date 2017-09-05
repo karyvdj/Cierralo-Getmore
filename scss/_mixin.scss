@@ -1,6 +1,8 @@
 @mixin texto ($padd){
   font-family: $font-principal;
   line-height: 1.5em;
+  color: $color-gray2;
+  display: inline-flex;
   padding: ($padd);
 }
 
@@ -9,5 +11,6 @@
   font-size:1em;
   a{
     text-decoration: none;
+    color: $color-gray2;
   }
 }
